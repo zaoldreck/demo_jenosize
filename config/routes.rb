@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  devise_for :owners
-  devise_for :users
+
+  devise_for :users, path: 'user' , controllers: { sessions: "user/sessions", passwords: "user/passwords" }
+  devise_for :admins, path: 'user' , controllers: { sessions: "user/sessions", passwords: "user/passwords" }
+  devise_for :owners, path: 'user' , controllers: { sessions: "user/sessions", passwords: "user/passwords" }
+  devise_for :customers, path: 'user' , controllers: { sessions: "user/sessions", passwords: "user/passwords" }
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
