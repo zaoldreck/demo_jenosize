@@ -6,17 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link rel="icon"  href="<%= asset_path current_site.logo.image.url %>" type="image/png"/>
-  <link rel="shortcut icon" href="<%= asset_path current_site.logo.image.url %>" type="image/png"/>
   <%= csrf_meta_tags %>
   <%= yield :head %>
 </head>
-<body class="<%= controller_name %> <%= action_name %>"
-  <div id='page'>
+<body class="<%= controller_name %> <%= action_name %>">
+  <div class='container'>
     <%= yield %>
   </div>
-  <!-- <footer class='navbar navbar-default navbar-fixed-bottom navbar-transparent-bg'>
-    <%= render 'application/footer' %>
-  </footer> -->
 </body>
 </html>
+

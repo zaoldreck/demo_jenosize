@@ -7,7 +7,7 @@ gem 'react-rails', '~> 1.0'
 #database
 gem 'pg'
 #sass
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 
 gem 'uglifier', '>= 1.3.0'
